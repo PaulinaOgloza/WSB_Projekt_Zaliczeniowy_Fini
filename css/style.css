@@ -1,0 +1,407 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+}
+
+.text-fuchsia {
+	color: rgb(138, 43, 226);
+}
+
+/* Navigation */
+nav {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.navbar-toggler {
+	font-size: 3rem;
+}
+
+.navbar-brand {
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-transform: none;
+}
+
+/* Search Bar */
+.search-bar {
+	flex-grow: 1;
+	display: flex;
+}
+
+.search-bar-input {
+	min-width: 100px;
+	font-size: 1.2rem;
+	padding-left: 8px;
+	border-radius: 3px !important;
+}
+
+.search-bar-icon {
+	padding: 2px 7px;
+}
+
+/* Basket */
+.header-basket {
+	display: flex;
+	align-items: end;
+	gap: 8px;
+	padding: 10px;
+}
+
+.fa-basket-shopping {
+	padding-right: 15px;
+}
+
+.basket-text {
+	padding-right: 15px;
+	color: grey;
+}
+
+/* Header */
+header {
+	font-size: 2rem;
+}
+
+/* Carousel */
+.carousel-item {
+	position: relative;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.carousel-img-eva {
+	background-image: url('../img/evangelion.jpg');
+}
+
+.carousel-img-gundam {
+	background-image: url('../img/mobileSuitGundum.jpg');
+}
+
+.carousel-img-gurren {
+	background-image: url('../img/gurrenLagann.jpg');
+}
+
+.carousel-img-galileo {
+	background-image: url('../img/galileo.jpg');
+}
+
+/* Main */
+.home-boxes {
+	padding: 5em 0;
+}
+
+.home-box i {
+	font-size: 4rem;
+}
+
+.home-box h3 {
+	font-size: 2.6rem;
+}
+
+.line {
+	background-color: rgba(195, 50, 185, 0.729);
+	height: 30px;
+}
+
+/* Products */
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+	gap: 40px;
+}
+
+.product-item {
+	display: flex;
+	max-width: 450px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 2px;
+	border-radius: 20px;
+	padding: 10px 15px;
+	/* cursor: pointer; */
+	transition: all 0.3s ease-in-out;
+}
+
+.product-item:hover {
+	box-shadow: 8px 8px 24px 0px rgba(141, 143, 161, 1);
+}
+
+.product-item img {
+	width: 240px;
+	border-radius: 20px;
+}
+
+.product-name {
+	margin-top: 10px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.product-show {
+	font-size: 20px;
+}
+
+.product-description {
+	color: grey;
+	font-size: 15px;
+	line-height: 22px;
+	width: 80%;
+}
+
+.product-price {
+	color: blueviolet;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+.product-add-to-basket-btn {
+	display: flex;
+	font-size: 20px;
+	margin-top: 9px;
+	padding: 8px;
+	color: grey;
+	background-color: #fff;
+	border-radius: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+.product-add-to-basket-btn:hover {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	background-color: rgb(36, 37, 37);
+	cursor: pointer;
+}
+
+/* Popup Form */
+.popup1 {
+	width: 440px;
+	background-color: white;
+	box-shadow: 8px 8px 24px 0px rgba(141, 143, 161, 1);
+	border-radius: 15px;
+}
+
+form {
+	padding: 40px;
+	font-size: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.input-section-title {
+	font-weight: 600;
+}
+
+.form-box {
+	margin-bottom: 15px;
+}
+
+.form-box label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-box input {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid purple;
+	border-radius: 5px;
+}
+
+.form-box.error input {
+	border: 1px solid purple;
+	background-color: rgba(128, 0, 128, 0.236);
+}
+
+.form-box .error-text,
+.payment-error-text {
+	margin: 5px 0 0 10px;
+	font-size: 14px;
+	color: blueviolet;
+	visibility: hidden;
+}
+
+.form-box.error .error-text,
+.payment-error-text {
+	visibility: visible;
+}
+
+.payment-container-radio {
+	display: inline-flex;
+	padding: 10px;
+}
+
+.radio-text {
+	padding: 2px;
+}
+
+.control-buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.send,
+.clear,
+.close,
+.backtolist,
+.add-to-cart-button {
+	display: block;
+	padding: 10px 0;
+	margin-left: 10px;
+	width: 100px;
+	font-size: 18px;
+	background-color: purple;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.clear {
+	display: block;
+	padding: 10px 0;
+	margin-left: 10px;
+	width: 100px;
+	font-size: 18px;
+	background-color: rgb(120, 116, 183);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.send {
+	display: block;
+	padding: 10px 0;
+	margin-left: 10px;
+	width: 100px;
+	font-size: 18px;
+	background-color: rgb(73, 153, 110);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.send:hover,
+.clear:hover,
+.close:hover,
+.backtolist:hover {
+	background-color: rgb(65, 32, 85);
+}
+
+.add-to-cart-button {
+	display: block;
+	padding: 10px 0;
+	margin: 10px auto;
+	width: 100px;
+	font-size: 14px;
+	/* font-weight: bold; */
+	background-color: rgb(135, 112, 135);
+	color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.remove-from-cart-button {
+	display: block;
+	padding: 10px 0;
+	margin: 10px auto;
+	width: 100px;
+	font-size: 14px;
+	background-color: rgb(201, 185, 201);
+	color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover,
+.remove-from-cart-button:hover {
+	background-color: rgb(65, 32, 85);
+}
+
+.popup-end {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 200px;
+	background-color: rgb(247, 224, 255);
+	border-radius: 8px;
+}
+
+.popup-end p {
+	font-size: 29px;
+}
+
+.popup-end .close {
+	margin-top: 20px;
+}
+
+.show-popup {
+	display: none;
+	top: 150px;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(304, 75%, 64%, 0.533);
+	z-index: -1;
+}
+
+/* Footer */
+footer {
+	font-size: 1.6rem;
+}
+
+@media (min-width: 1300px) {
+	.carousel-item {
+		height: 400px;
+	}
+
+	.products {
+		margin-left: 15px;
+		gap: 50px;
+	}
+}
+
+@media (max-width: 700px) {
+	.basket-text {
+		display: none;
+	}
+}

@@ -1,0 +1,51 @@
+const products = [
+	{
+		id: 0,
+		name: 'Gurren Lagann',
+		description: 'Gurren Lagann lorem borem',
+		show: 'Gurren Lagann',
+		price: 299999,
+		image: '../img/./gurrenLagannSmall.jpg',
+	},
+
+	{
+		id: 1,
+		name: 'Galileo',
+		description: 'Galileo lorem borem ',
+		show: 'Promare',
+		price: 300000,
+		image: '../img/./galileoSmall.jpg',
+	},
+	{
+		id: 2,
+		name: 'Evangelion Unit 1',
+		description: 'Get in the mecha Shinji ',
+		show: 'Neon Geness Evangelion',
+		price: 500000,
+		image: '../img/evangelionSmall.jpg',
+	},
+	{
+		id: 3,
+		name: 'Evangelion Unit 2',
+		description: 'Lorem borem ',
+		show: 'Neon Geness Evangelion',
+		price: 700000,
+		image: '../img/evangelion2Small.jpg',
+	},
+	{
+		id: 4,
+		name: 'Gundam',
+		description: 'Peepaw of all mecha ',
+		show: 'Gundam Wings',
+		price: 600000,
+		image: '../img/kidōSenshiGundamSmall.jpg',
+	},
+	{
+		id: 5,
+		name: 'Gundam',
+		description: 'Peepaw of all mecha ',
+		show: 'Gundam Wings',
+		price: 700000,
+		image: '../img/mobileSuitGundumSmall.jpg',
+	},
+];
