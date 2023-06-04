@@ -1,5 +1,3 @@
-// const { isFormElement } = require('react-router-dom/dist/dom');
-
 const currentProducts = products;
 
 const productsSection = document.querySelector('.products');
@@ -141,7 +139,8 @@ const pushMechaPicture = (productId) => {
 	}
 };
 
-const productId = 2;
+// Example usage
+const productId = 2; // ID of the product you want to display
 pushMechaPicture(productId);
 
 const popupEnd = document.querySelector('#popup-end');
@@ -255,80 +254,10 @@ goToForm.addEventListener('click', (e) => {
 	scrollToSectionById('popup1');
 });
 
-// our mechas button nawigacja
+// our mechas button navigation
 
-// const navOurMechas = document.querySelector('.navbar-our-mechas');
-// navOurMechas.addEventListener('click', (e) => {
-// 	e.preventDefault();
-// 	scrollToSectionById('our-mechas');
-// });
-
-// // wyszukiwarka
-
-// let shows = new Set();
-// const categoriesItems = document.querySelector('.categories-items');
-
-// const renderShows = (items) => {
-// 	for (let i = 0; i < items.length; i++) {
-// 		shows.add(items[i].show);
-// 	}
-// 	shows = ['all', ...shows];
-
-// 	shows.forEach((show, index) => {
-// 		const newCategory = document.createElement('button');
-// 		newCategory.innerHTML = show;
-// 		newCategory.dataset.show = show;
-
-// 		index === 0 ? newCategory.classList.add('active') : '';
-
-// 		categoriesItems.appendChild(newCategory);
-// 	});
-
-// 	console.log(shows);
-// };
-
-// const currentShows = products.map((product) => product.show);
-// renderShows(currentShows);
-
-// const searchBarInput = document.querySelector('.search-bar-input');
-
-// searchBarInput.addEventListener('input', (e) => {
-// 	const search = e.target.value;
-
-// 	const showMecha = currentShows.filter((product) => {
-// 		return product.toLowerCase().includes(search.toLowerCase());
-// 	});
-
-// 	console.log(showMecha);
-// });
-
-const categoriesItems = document.querySelector('.categories-items');
-
-const renderShows = (items) => {
-	const shows = ['all', ...new Set(items.map((item) => item.show))];
-
-	shows.forEach((show, index) => {
-		const newCategory = document.createElement('button');
-		newCategory.innerHTML = show;
-		newCategory.dataset.show = show;
-		index === 0 ? newCategory.classList.add('active') : '';
-		categoriesItems.appendChild(newCategory);
-	});
-
-	console.log(shows);
-};
-
-const currentShows = products.map((product) => product.show);
-renderShows(currentShows);
-
-const searchBarInput = document.querySelector('.search-bar-input');
-
-searchBarInput.addEventListener('input', (e) => {
-	const search = e.target.value;
-
-	const showMecha = currentShows.filter((product) => {
-		return product.toLowerCase().includes(search.toLowerCase());
-	});
-
-	console.log(showMecha);
+const navOurMechas = document.querySelector('.navbar-our-mechas');
+navOurMechas.addEventListener('click', (e) => {
+	e.preventDefault();
+	scrollToSectionById('our-mechas');
 });

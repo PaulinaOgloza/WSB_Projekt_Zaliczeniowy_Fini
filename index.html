@@ -23,6 +23,7 @@
 			crossorigin="anonymous"
 		></script>
 		<title>Mecha Shop</title>
+		
 	</head>
 
 	<body>
@@ -36,7 +37,7 @@
 				
 				<!-- search bar -->
 				<div class="search-bar">
-					<input type="text" class="search-bar-input" placeholder="Search in shop"
+					<input type="text"	class="search-bar-input" placeholder="Search in shop"
 					autocomplete="off">
 					<div class="search-bar-icon"><i class="fa-solid fa-magnifying-glass text-light"></i></div>
 				</div>
@@ -62,8 +63,10 @@
 						</li>
 						<li class="nav-item">
 							
-							<button class="nav-link px-lg-3 navbar-our-mechas" onclick="scrollToSection('our-mechas')"> OUR MECHAS</button>
+							<button class="nav-link px-lg-3 navbar-our-mechas" onclick="scrollToSectionById('.our-mechas')"> OUR MECHAS</button>
 						</li>
+					
+						
 						<!-- <li class="nav-item">
 							<a class="nav-link px-lg-3" href="contact.html">Contact</a>
 						</li> -->
@@ -75,7 +78,7 @@
 			</div>
 			<!-- koszyk -->
 
-			<div class="header-basket text-light"><i class="fa-solid fa-basket-shopping"></i><span class="basket-text"></span></div>
+			<div class="header-basket text-light"><i class="fa-solid fa-basket-shopping"></i><span class="basket-text">Cart</span></div>
 		</nav>
 
 		<header>
@@ -158,6 +161,9 @@
 	<p id="our-mechas" class="line py-1 mb-0 text-center"></p>
 
 	<section class="py-5"><p class="display-2 text-center pt-5">Our Mechas</p></section>
+	<section class="categories-items">
+		<button class="active">All</button>
+				</section>
 <!-- 
 	produkty -->
 
@@ -175,7 +181,6 @@
 			<input type="text" id="firstname" placeholder="Enter first and last name">
 			<p class="error-text"></p>
 		</div>
-		
 <!-- czas dostawy -->
 <div class="form-box">
 <label class="input-section-title" for="delivery-date">Delivery Date:</label>
@@ -186,7 +191,7 @@
 
 <!-- radio buttony -->
 <p class="input-section-title">Payment method:</p>
-<div class=" form-box">
+<div class="paymentContainer">
 <div class="payment-container-radio">
   <input type="radio" name="payment" value="leasing" id="leasing" required>
   <label class="radio-text" for="leasing">Leasing</label>
@@ -215,10 +220,12 @@
 
 <!-- popup koniec -->
 
-<div class="popup-end show-popup">
-	<p> Your order:
-		<p> Order placeholder </p>
-	</p>
+<div id="popup-end" class="popup-end">
+	<p class="thank-you"> Thank you for your order:</p>
+		<div id="name-form-input" class="your-name">Your name here</div>
+		<div id="mecha-popup">Photo of the mecha you choose</div>
+	<div id="to-be-paid" ></div>
+	<div id="chosenPaymentMethod"></div>
 	<button class="close"> Close</button>
 </div>
 
@@ -231,6 +238,7 @@
 	<button class="backtolist" onclick="scrollToSection('our-mechas')">Back to shop</button>
   </div>
   
+		</form>
 </section>
 
 </main>
@@ -249,7 +257,7 @@
 		></script>
 
 		<script src="/js/products.js"></script>
-		<script src="/js/./accessories.js"></script>
+		<script src="/js/accessories.js"></script>
 		<script src="/js/index.js"></script>
 		
 	

@@ -2,7 +2,7 @@ const products = [
 	{
 		id: 0,
 		name: 'Gurren Lagann',
-		description: 'Gurren Lagann lorem borem',
+		description: 'Gurren Lagann jest super duper booba',
 		show: 'Gurren Lagann',
 		price: 299999,
 		image: '../img/./gurrenLagannSmall.jpg',
@@ -11,7 +11,7 @@ const products = [
 	{
 		id: 1,
 		name: 'Galileo',
-		description: 'Galileo lorem borem ',
+		description: 'Galileo jest gejowy ale czadowy ',
 		show: 'Promare',
 		price: 300000,
 		image: '../img/./galileoSmall.jpg',
@@ -19,7 +19,7 @@ const products = [
 	{
 		id: 2,
 		name: 'Evangelion Unit 1',
-		description: 'Get in the mecha Shinji ',
+		description: 'Get in the mech Shinji ',
 		show: 'Neon Geness Evangelion',
 		price: 500000,
 		image: '../img/evangelionSmall.jpg',
@@ -27,7 +27,7 @@ const products = [
 	{
 		id: 3,
 		name: 'Evangelion Unit 2',
-		description: 'Lorem borem ',
+		description: 'Get in the mech Shinji ',
 		show: 'Neon Geness Evangelion',
 		price: 700000,
 		image: '../img/evangelion2Small.jpg',
